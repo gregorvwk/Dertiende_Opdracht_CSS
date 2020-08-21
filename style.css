@@ -1,0 +1,31 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blok {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px;
+  background: purple;
+}
+
+.blok .blok__cirkel {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  padding: 50px;
+  border-radius: 50px;
+}
+
+.blok-modifier:hover {
+  background: white;
+}
+
+.blok-modifier:hover .blok__cirkel-modifier {
+  background: purple;
+}
+/*# sourceMappingURL=style.css.map */

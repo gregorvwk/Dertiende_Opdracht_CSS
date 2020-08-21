@@ -1,0 +1,30 @@
+@mixin blok {
+    justify-content: center;
+    padding: 50px;
+    background: purple;
+}
+@mixin cirkel {
+    align-items: center;
+    background: white;
+    padding: 50px;
+    border-radius: 50px;
+}    
+@mixin blok-modifier {
+    background: white;
+    & .blok__cirkel-modifier {
+        background: purple;
+    }
+}
+
+body {
+    display: flex;
+}
+.blok {
+@include blok;
+    & .blok__cirkel {
+        @include cirkel;
+}
+}
+.blok-modifier:hover {
+    @include blok-modifier
+}
